@@ -1,5 +1,6 @@
 function test_bug3453
-filename = '/home/common/matlab/fieldtrip/data/ftp/tutorial/epilepsy/case1/ctf_data/case1.pos';
+%filename = '/home/common/matlab/fieldtrip/data/ftp/tutorial/epilepsy/case1/ctf_data/case1.pos';
+filename = 'D:\workspace\Data\Epilepsy_kids\case1\ctf_data\case1.pos';
 
 polhemus = ft_read_headshape(filename);
 polhemus = ft_convert_units(polhemus,'mm');

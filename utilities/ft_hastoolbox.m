@@ -156,7 +156,7 @@ url = {
   'JSONLAB'       'see https://se.mathworks.com/matlabcentral/fileexchange/33381-jsonlab--a-toolbox-to-encode-decode-json-files'
   'MFFMATLABIO'   'see https://github.com/arnodelorme/mffmatlabio'
   'JSONIO'        'see https://github.com/gllmflndn/JSONio'
-  'CPD'           'see https://sites.google.com/site/myronenko/research/cpd'
+  'GMMREG_CPD'    'see https://nl.mathworks.com/matlabcentral/fileexchange/22337-robust-nonrigid-point-set-registration'
   };
 
 if nargin<2
@@ -386,8 +386,8 @@ switch toolbox
     dependency = {'fig2plotly' 'savejson'};
   case 'JSONIO'
     dependency = {'jsonread', 'jsonwrite', 'jsonread.mexa64'};
-  case 'CPD' 
-    dependency = {'cpd'};
+  case 'GMMREG_CPD' 
+    dependency = {'gmmreg_cpd', 'determine_border'};
     
     % the following are FieldTrip modules/toolboxes
   case 'FILEIO'

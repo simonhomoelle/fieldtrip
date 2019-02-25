@@ -30,7 +30,7 @@ function M = prepare_mesh_fittemplate(headshape,template)
 % ensure that the input is consistent with what this function expects
 
 % add toolbox cpd
-ft_hastoolbox('cpd'); %% has to be edited
+ft_hastoolbox('gmmreg_cpd',1); %% has to be edited
 
 
 % prepare control points
